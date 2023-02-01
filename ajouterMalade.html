@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="refresh" content="600; url=http://www.tic-soft.com"> -->
+  <meta name="description" content="Système de gestion du transfert et des Evacuations des Malades">
+  <link rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
+  <title>Ajouter un Nouveau Malade</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+   <!-- navbar 1. transparent 2. plus large-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <img src="img/logo.jpg" alt="Système de gestion du transfert et des Evacuations des Malades" title="Système de gestion du transfert et des Evacuations des Malades" class="img-fluid rounded" width="60" height="50">&nbsp&nbsp
+     <a class="navbar-brand text-cloud"href="#">Système de gestion du transfert et des Evacuations des Malades</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     <div class="collapse navbar-collapse" id="menu">
+       <ul class="navbar-nav">
+         <!-- enlever active de home-->
+         <li class="nav-item page-scroll">
+           <a class="nav-link" href="adminMedecin.html">Retour</a>
+         </li>       
+       </ul>
+     </div>
+</nav> 
+<br><br><br><br>
+<div class="container">
+    <div class="row text-center text-bg-success">
+<div class="col-md-12">
+  <h1>Ajouter un Nouveau Malade</h1>
+</div></div>
+<br><br>
+     <form name="Ajout" action="" onsubmit="return validateForm()" method="post">
+        <table class="form-style">
+           <tr>
+              <td>
+                 <label>
+                    Nom du Malade<span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <input type="text" name="name" class="long"/>
+                 <span class="error" id="errorname"></span>
+              </td>
+            <td>
+                 <label>
+                    Prénom du Malade <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <input type="text" name="prenom" class="long"/>
+                 <span class="error" id="errorname"></span>
+              </td>
+              <td>
+                 <label>
+                    Date de Naissance <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <input name="DDN" class="date"/>
+                 <span class="error" id="errormsg"></span>
+              </td>
+           </tr>
+           
+           <tr>
+            <td>
+               <label>
+                  Age <span class="required">*</span>
+               </label>
+            </td>
+            <td>
+               <input name="age" class="age"/>
+               <span class="error" id="errormsg"></span>
+            </td>
+            <td>
+               <label>
+                  Adresse <span class="required">*</span>
+               </label>
+            </td>
+            <td>
+               <textarea name="Adresse" class="adresse"></textarea>
+               <span class="error" id="errormsg"></span>
+            </td>
+            <td>
+                <input type="submit" value="Envoyer">  
+            </td>
+            <td>    
+                <input type="reset" value="Réinitialiser"> 
+            </td>
+         </tr>
+         </table>
+     </form>
+    </div>
+</div>
+
+
+<hr>
+    <footer class="text-fb">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-12">
+                  <p class="padding10">&copy; TICSoft - 2020</p>
+              </div>
+          </div>
+      </div>    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+</body>
+</html>
