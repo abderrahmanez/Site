@@ -23,7 +23,7 @@
       <ul class="navbar-nav ms-auto flex-nowrap">
          <!-- enlever active de home-->
          <li class="nav-item page-scroll">
-           <a class="nav-link" href="adminMedecin.html">Retour</a>
+           <a class="nav-link" href="admin.html">Retour</a>
          </li>       
        </ul>
      </div>
@@ -32,15 +32,22 @@
 <div class="container">
     <div class="row text-center text-bg-success">
 <div class="col-md-12">
-  <h1>Ajouter un Nouveau Malade</h1>
+<h1>Ajouter un Nouvel Etablissement</h1>
 </div></div>
-<br><br><br>
+<br>
+<form class="text-center">
+    <div>
+      <input type="search" id="maRecherche" name="q">
+      <button>Rechercher un Etablissement</button>
+    </div>
+  </form>
+  <br>
      <form name="Ajout" action="" onsubmit="return validateForm()" method="post">
         <table class="form-style">
            <tr>
               <td>
                  <label>
-                    Nom du Malade<span class="required">*</span>
+                    Nom de l'Etablissement<span class="required">*</span>
                  </label>
               </td>
               <td>
@@ -49,45 +56,35 @@
               </td>
             <td>
                  <label>
-                    Prénom du Malade <span class="required">*</span>
+                    Longitude <span class="required">*</span>
                  </label>
               </td>
               <td>
-                 <input type="text" name="prenom" class="long"/>
+                 <input type="number" name="longitude" class="long"/>
                  <span class="error" id="errorname"></span>
               </td>
               <td>
                  <label>
-                    Date de Naissance <span class="required">*</span>
+                    Latitude <span class="required">*</span>
                  </label>
               </td>
               <td>
-                 <input type="date" class="date"/>
+                 <input type="number" class="latitude"/>
                  <span class="error" id="errormsg"></span>
               </td>
            </tr>
-           
            <tr>
             <td>
                <label>
-                  Age <span class="required">*</span>
+                 Adresse <span class="required">*</span>
                </label>
             </td>
             <td>
-               <input type="number" class="age"/>
+               <input type="text"class="adresse"/>
                <span class="error" id="errormsg"></span>
             </td>
             <td>
-               <label>
-                  Adresse <span class="required">*</span>
-               </label>
-            </td>
-            <td>
-               <textarea name="Adresse" class="adresse"></textarea>
-               <span class="error" id="errormsg"></span>
-            </td>
-            <td>
-                <input type="submit" value="Envoyer">  
+                <input type="submit" value="Enregistrer">  
             </td>
             <td>    
                 <input type="reset" value="Réinitialiser"> 
@@ -97,20 +94,7 @@
      </form>
     </div>
 </div>
-<br>
-<div class="container">
-   <div class="row text-center text-bg-success">
-<div class="col-md-12">
-<div class="dropdown">
-   <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-   Quel est le type de restation ?
-   </button>
-   <ul class="dropdown-menu">
-     <li><a class="dropdown-item" href="delivrerOrdonnance.html">Consultation</a></li>
-     <li><a class="dropdown-item" href="hospitalisation.html">Hospitalisations</a></li>
-     <li><a class="dropdown-item" href="evacuation.html">Evacuation</a></li>
-   </ul>
- </div></div></div></div>
+
 
 <hr>
     <footer class="text-fb">
